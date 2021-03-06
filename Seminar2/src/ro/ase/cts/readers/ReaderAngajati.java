@@ -7,12 +7,13 @@ import java.util.List;
 import java.util.Scanner;
 
 import ro.ase.cts.clase.Angajat;
+import ro.ase.cts.clase.Aplicant;
 
 public class ReaderAngajati {
-	public static List<Angajat> readAngajati(String file) throws FileNotFoundException {
+	public static List<Aplicant> readAngajati(String file) throws FileNotFoundException {
 		Scanner input2 = new Scanner(new File(file));
 		input2.useDelimiter(",");
-		List<Angajat> angajati = new ArrayList<Angajat>();
+		List<Aplicant> aplicanti = new ArrayList<Aplicant>();
 
 		while (input2.hasNext()) {
 			String nume = input2.next();
@@ -26,10 +27,10 @@ public class ReaderAngajati {
 			int salariu = input2.nextInt();
 			String ocupatie = input2.next();
 			Angajat a = new Angajat(nume, prenume, varsta, punctaj, nr, vect, salariu, ocupatie);
-			angajati.add(a);
+			aplicanti.add(a);
 		}
 		input2.close();
-		return angajati;
+		return aplicanti;
 	}
 
 }
