@@ -4,8 +4,7 @@ public class FactoryPortar implements Factory{
 
 	@Override
 	public Jucator creeazaJucator(String numeJucator) {
-		// TODO Auto-generated method stub
-		return new  Portar(String numeJucator);
+		return new Portar(numeJucator);
 	}
 
 }

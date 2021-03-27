@@ -1,6 +1,12 @@
 package ro.ase.cts.factory;
 
-public class Portar extends Jucator {
+
+public class Portar extends Jucator{
+
+	public Portar(String numeJucator) {
+		super(numeJucator);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public String toString() {
@@ -8,7 +14,7 @@ public class Portar extends Jucator {
 		builder.append("Portar []").append(super.toString());
 		return builder.toString();
 	}
+	
+	
 
-	
-	
 }

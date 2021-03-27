@@ -1,7 +1,7 @@
 package ro.ase.cts.factory;
 
-public class TipJucator {
-	 Portar,
-	 Fundas,
-	 Atacant;
+public enum TipJucator {
+    Portar,
+    Fundas,
+    Atacant
 }
