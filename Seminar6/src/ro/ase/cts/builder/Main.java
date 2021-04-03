@@ -9,5 +9,11 @@ public class Main {
 			System.out.println(r1);
 			System.out.println(r2);
 			System.out.println(r3);
+			
+			
+			RezervareBuilderV2 rezervareBuilderV2=new RezervareBuilderV2();
+			rezervareBuilderV2.setAreMancareInclus(true).setAreBauturaInclusa(true).setAreScaunErgonomic(true);
+			Rezevare rezervare3=rezervareBuilderV2.setCodRezervare(4).build();
+			Rezevare rezervare4=rezervareBuilderV2.setCodRezervare(4).build();
 		}
 }
