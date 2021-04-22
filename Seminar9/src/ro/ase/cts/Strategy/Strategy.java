@@ -1,5 +1,5 @@
 package ro.ase.cts.Strategy;
 
-public interface ModPlata {
+public interface Strategy {
 	void realizeazaPlata(int suma );
 }
