@@ -4,29 +4,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ManagerComenzi {
-	List<IComanda> comenzi;
+List<IComanda> listaComenzi;
 	
-	public ManagerComenzi(){
-		comenzi = new ArrayList<IComanda>();
+	public ManagerComenzi() {
+		listaComenzi=new ArrayList<IComanda>();
 	}
 	
 	public void invoca(IComanda comanda) {
-		comenzi.add(comanda);
+		listaComenzi.add(comanda);
 	}
 	
-	public void executaComanda(IComanda comanda) throws Exception {
-		if(comenzi.size()>0) {
-			comenzi.get(0).executa();
-			comenzi.remove(0);
-		}else {
+	public void executaComanda() throws Exception {
+		if(listaComenzi.size()>0) {
+		listaComenzi.get(0).executa();
+		listaComenzi.remove(0);
+		}
+		else {
 			throw new Exception();
 		}
 	}
 	
 	public void executaComenzi() {
-		for(IComanda c:comenzi) {
-			c.executa();
-		}
-		comenzi.clear();
+			for(IComanda c: listaComenzi) {
+				c.executa();
+			}
+			listaComenzi.clear();
 	}
 }

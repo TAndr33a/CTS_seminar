@@ -2,6 +2,7 @@ package main;
 
 import command.ComandaConstituire;
 import command.ComandaDepunere;
+import command.ComandaRetragere;
 import command.ContBancar;
 import command.ManagerComenzi;
 
